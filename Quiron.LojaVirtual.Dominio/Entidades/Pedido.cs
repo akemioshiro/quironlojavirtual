@@ -10,6 +10,7 @@ namespace Quiron.LojaVirtual.Dominio.Entidades
     public class Pedido
     {
         [Required(ErrorMessage ="Informe seu nome")]
+        [Display(Name = "Nome do Cliente:")]
         public string NomeCliente { get; set; }
 
         [Display(Name ="Cep:")]
