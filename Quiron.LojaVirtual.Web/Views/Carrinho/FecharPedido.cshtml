@@ -13,6 +13,7 @@
     <div>
         <label>Nome do cliente:</label>
         @Html.TextBoxFor(x => x.NomeCliente, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x=>x.NomeCliente)
     </div>
 
     <h3>Dados para a entrega</h3>
