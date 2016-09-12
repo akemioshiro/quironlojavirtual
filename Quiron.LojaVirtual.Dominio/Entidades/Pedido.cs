@@ -18,7 +18,7 @@ namespace Quiron.LojaVirtual.Dominio.Entidades
 
         [Required(ErrorMessage ="Informe seu endereço")]
         [Display(Name ="Endereço:")]
-        public string Endereço { get; set; }
+        public string Endereco { get; set; }
 
         [Display(Name = "Complemento:")]
         public string Complemento { get; set; }
