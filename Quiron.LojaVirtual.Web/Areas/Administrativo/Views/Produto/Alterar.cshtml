@@ -1,7 +1,6 @@
 ﻿@model Quiron.LojaVirtual.Dominio.Entidades.Produto
 
 @{
-    ViewBag.Title = "Alterar";
     Layout = "~/Areas/Administrativo/Views/Shared/_AdministrativoLayout.cshtml";
 }
 
@@ -19,7 +18,7 @@
         <h3>Alterar - @Model.Nome</h3>
     </div>
 
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Alterar", "Produto"))
     {
         <div class="panel-body">
 
@@ -41,6 +40,8 @@
                         {
                             @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
                         }
+
+                        @Html.ValidationMessage(property.PropertyName)
                     </div>
                 }
             }
